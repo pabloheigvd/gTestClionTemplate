@@ -68,6 +68,8 @@ Create ```CMakeLists.txt``` inside ```/tests```, then:
 * reference your test files so that the ```All_Tests``` variable knows about your tests.
 * reference your source files such that ```All_Tests``` variable knows about your tests.
 ```cmake
+# 'lib' is the folder width Google Test sources
+add_subdirectory(lib)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 # declare relatives path to test files because
